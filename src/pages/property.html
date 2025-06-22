@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandView - Property Details</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/main.mjs"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <h1>LandView</h1>
+        <div class="account-menu">
+          <button id="accountToggle">My Account ▾</button>
+          <div id="accountDropdown" class="dropdown hidden">
+            <form id="loginForm">
+              <label for="loginEmail">Email:</label>
+              <input id="loginEmail" type="email" name="email" placeholder="Email" title="Enter your email address" required />
+              <label for="loginPassword">Password:</label>
+              <input id="loginPassword" type="password" name="password" placeholder="Password" title="Enter your password" required />
+              <button type="submit">Login</button>
+            </form>
+            <hr />
+            <form id="registerForm">
+              <label for="registerName">Full Name:</label>
+              <input id="registerName" type="text" name="name" placeholder="Full Name" title="Enter your full name" required />
+              <label for="registerEmail">Email:</label>
+              <input id="registerEmail" type="email" name="email" placeholder="Email" title="Enter your email address" required />
+              <label for="registerPassword">Password:</label>
+              <input id="registerPassword" type="password" name="password" placeholder="Password" title="Create a password" required />
+              <button type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="tagline">Explore. Compare. Build Smarter.</p>
+      <nav>
+        <ul>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="map.html">Map View</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="property.html">Property Details</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Property Details</h2>
+      <div class="property-details">
+        <h3>[Property Title]</h3>
+        <p><strong>Owner:</strong> [Name]</p>
+        <p><strong>Legal Description:</strong> [Legal Info]</p>
+        <p><strong>Last Sold:</strong> [Date, Price]</p>
+        <div class="gallery">[Image Gallery Placeholder]</div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 LandView Project - Built for WDD 330</p>
+    </footer>
+
+    <script>
+      document.getElementById("accountToggle").addEventListener("click", () => {
+        document.getElementById("accountDropdown").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

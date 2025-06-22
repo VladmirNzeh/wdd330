@@ -1,0 +1,95 @@
+/* style.css - LandView Styling */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #f5f5f5;
+  color: #212121;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #00796b;
+}
+
+.site-header {
+  background: #00796b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.site-header nav a {
+  color: #ffa000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+.intro, .features, .audience, .tech {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.listing, .result-item {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form input {
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+}
+
+button {
+  background-color: #ffa000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffb300;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #00796b;
+  color: white;
+  margin-top: 2rem;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandView - Explore. Compare. Build Smarter.</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+    <script type="module" src="src/js/main.mjs"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <h1>LandView</h1>
+        <div class="account-menu">
+          <button id="accountToggle">My Account ▾</button>
+          <div id="accountDropdown" class="dropdown hidden">
+            <form id="loginForm">
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="password" name="password" placeholder="Password" required />
+              <button type="submit">Login</button>
+            </form>
+            <hr />
+            <form id="registerForm">
+              <input type="text" name="name" placeholder="Full Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="password" name="password" placeholder="Password" required />
+              <button type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="tagline">Explore. Compare. Build Smarter.</p>
+      <nav>
+        <ul>
+          <li><a href="src/pages/search.html">Search</a></li>
+          <li><a href="src/pages/map.html">Map View</a></li>
+          <li><a href="src/pages/compare.html">Compare</a></li>
+          <li><a href="src/pages/property.html">Property Details</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Smarter Land Decisions</h2>
+        <p>
+          LandView is a modern web app that helps you find, compare, and analyze land with detailed, interactive tools. From satellite views to zoning overlays and ownership details, it's built to empower developers, homebuyers, and urban planners.
+        </p>
+      </section>
+
+      <section class="features">
+        <h2>What You Can Do</h2>
+        <ul>
+          <li>Create an Account and Save Favorite Spots</li>
+          <li>Smart Search with Filters like Zoning and Elevation</li>
+          <li>Interactive Maps with Real-Time Overlays</li>
+          <li>Detailed Property Insights</li>
+          <li>Compare Listings Side by Side</li>
+          <li>Generate Reports and Share Links</li>
+        </ul>
+      </section>
+
+      <section class="audience">
+        <h2>Who It's For</h2>
+        <div class="user-types">
+          <div>
+            <h3>Primary Users</h3>
+            <ul>
+              <li>Real Estate Developers</li>
+              <li>Future Homeowners</li>
+              <li>Land Use Researchers</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Secondary Users</h3>
+            <ul>
+              <li>Real Estate Agents</li>
+              <li>Urban Planners & Students</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech">
+        <h2>Tech & Tools</h2>
+        <p>
+          LandView leverages <strong>ArcGIS</strong> and <strong>Google Maps</strong> APIs for real-time maps, overlays, and directions. User preferences are saved using <strong>localStorage</strong> and <strong>Firebase</strong> for account-linked data.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 LandView Project - Built for WDD 330</p>
+    </footer>
+
+    <script>
+      document.getElementById("accountToggle").addEventListener("click", () => {
+        document.getElementById("accountDropdown").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
